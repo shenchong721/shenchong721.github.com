@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Equation 85
+title: 耕农
 ---
 {% include JB/setup %}
 
