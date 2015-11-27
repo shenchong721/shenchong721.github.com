@@ -16,6 +16,14 @@ tags: [linux]
 	在B上执行: $ xhost+IPA  #将Ａ加入到xhost中去
 	之后，在Ｂ上执行：$ ssh -x IPA　＃用ssh连接Ａ，此时便可以在Ｂ上显示Ａ的图形界面了。
 
+
+
+	单星号 = *斜体*
+	单下划线 = _斜体_
+	双星号 = **加粗**
+	双下划线 = __加粗__
+
+
 ####注：
 DISPLAY=IPB:0.0 为ip加上端口号，[ipA]:[portA].[portB]
 其中：portA为display number，portB为screen number，通常为０
