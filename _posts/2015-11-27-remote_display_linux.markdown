@@ -10,12 +10,7 @@ tags: [linux]
 - 服务器A：无图形界面，IPA
 - 客户机B：有图形界面，IPB
 - 现在需要将A的图形界面显示在B上   
-分别：
 
-    Error fetching https://rubygems.org/:
-            Errno::ECONNRESET: Connection reset by peer - SSL_connect (https://api.rubygems.org/specs.4.8.gz)
-
-原因是 https://rubygems.org/ 源被GFW墙掉了，需要重新设置源 
 分别执行一下命令:    
 
 	在上执行: $ export DISPLAY=IPB:0.0 #指定Ａ的显示位置为B
