@@ -13,9 +13,9 @@ tags: [linux]
 - 现在需要将A的图形界面显示在B上    
 分别执行一下命令：    
 
-	-  在A上执行：$ export DISPLAY=IPB:0.0　＃指定Ａ的显示位置为Ｂ
-	-  在B上执行：$ xhost+IPA  #将Ａ加入到xhost中去
-	-  之后，在Ｂ上执行：$ ssh -x IPA　＃用ssh连接Ａ，此时便可以在Ｂ上显示Ａ的图形界面了。
+	在A上执行：$ export DISPLAY=IPB:0.0　＃指定Ａ的显示位置为Ｂ
+	在B上执行：$ xhost+IPA  #将Ａ加入到xhost中去
+	之后，在Ｂ上执行：$ ssh -x IPA　＃用ssh连接Ａ，此时便可以在Ｂ上显示Ａ的图形界面了。
 
 ####注：
 DISPLAY=IPB:0.0 为ip加上端口号，[ipA]:[portA].[portB]
