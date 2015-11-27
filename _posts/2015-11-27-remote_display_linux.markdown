@@ -1,9 +1,9 @@
 ---
-layout:post
-title:"linux远程显示桌面"
-date:2015-11-27 17:48
-category:"备忘"
-tags:[linux]
+layout: post
+title: "linux远程显示桌面"
+date: 2015-11-27 17:48
+category: "备忘"
+tags: [linux]
 ---
 {% include JB/setup %}
 
