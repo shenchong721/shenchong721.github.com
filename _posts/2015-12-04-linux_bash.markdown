@@ -1,12 +1,14 @@
 ---
 layout: post
 title: "linux实用命令"
-date: 2015-11-27 17:48
+date: 2015-12-04 16:54
 category: "备忘"
 tags: [linux, bash]
 ---
 {% include JB/setup %}
+
 参考博客：[JohnTsai](http://www.cnblogs.com/JohnTsai/p/4027229.html)
+
 ---
 
 在linux的使用中经常会需要用到一些少用但实用的命令，在此做一记录，方便查询。
