@@ -7,9 +7,6 @@ tags: [linux, bash]
 ---
 {% include JB/setup %}
 
-参考博客：[JohnTsai](http://www.cnblogs.com/JohnTsai/p/4027229.html)
-
----
 
 在linux的使用中经常会需要用到一些少用但实用的命令，在此做一记录，方便查询。
 
@@ -17,7 +14,17 @@ tags: [linux, bash]
 * [**2.gawk**](#2)
 
 <h1 id="1">1.sed</h1>
-	$echo "this is a test" sed `s/a/a sed/`  #该命令将‘a’换成‘a sed’;
+
+* 模式s/pattern/replacement/flags:
+	+ 数字: 表示新文本将替换第几处模式匹配的地方
+	+ g: 表明新文本将会替换所有已有文本出现的地方
+	+ p: 表明原来行的结果要打印出来
+	+w file: 表明将替换的结果写到文件中去
+
+具体代码如下：
+	
+	$echo "this is a  test" sed `s/test/mytest/`  #该命令将‘test’换成‘mytest’;
+	$echo "this is second test of sed test" sed `s/test/mytest/2`  #参数2表示是替换第二个test，默认是替换第一个;
 	$sed -e `s/a/b/ ; s/c/d/` txt #执行多个命令时加上参数-e;且命令之间用分号隔开
 
 <h2 id='2'>2.gawk</h2>
