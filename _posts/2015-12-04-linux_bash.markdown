@@ -16,16 +16,20 @@ tags: [linux, bash]
 * [**1.sed**](#1)  
 * [**2.gawk**](#2)
 
->* [1.sed](#4)  
->* [2.gawk](#5)
-
 <h1 id="1">1.sed</h1>
 
 	$echo "this is a test " sed `s/a/a sed/`  #该命令将‘a’换成‘a sed’;
 	$sed -e `s/a/b/ ; s/c/d/` txt #执行多个命令时加上参数-e;且命令之间用分号隔开
 
 <h2 id='2'>2.gawk</h2>
-你好２
+	* gawk 脚本命令必须放到两个大括号内，且放到单引号中;
+	* gawk 会默认用空格符给输入字符串划分;
+	* 
+
+	$ gawk '{print $1}' txt  #将txt中每行数据的第一个划分打印出来
+
+  
+
 
 
 ####注：
