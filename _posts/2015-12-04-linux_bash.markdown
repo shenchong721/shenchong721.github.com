@@ -26,7 +26,7 @@ tags: [linux, bash]
    * gawk 会默认用空格符给输入字符串划分;
 
         $ gawk '{print $1}' txt  #将txt中每行数据的第一个划分打印出来
-
+	$ gawk -F: '{print $1}' /etc/passwd  #换用其他的换行符，可以加-F选项
 ####注：
 DISPLAY=IPB:0.0 为ip加上端口号，[ipA]:[portA].[portB]
 其中：portA为display number，portB为screen number，通常为０
