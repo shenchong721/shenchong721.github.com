@@ -23,14 +23,9 @@ tags: [linux, bash]
 
 <h2 id='2'>2.gawk</h2>
    * gawk 脚本命令必须放到两个大括号内，且放到单引号中;
-   * gawk 会默认用空格符给输入字符串划分;     
+   * gawk 会默认用空格符给输入字符串划分;
 
-	$ gawk '{print $1}' txt  #将txt中每行数据的第一个划分打印出来
-
-
-  
-
-
+        $ gawk '{print $1}' txt  #将txt中每行数据的第一个划分打印出来
 
 ####注：
 DISPLAY=IPB:0.0 为ip加上端口号，[ipA]:[portA].[portB]
