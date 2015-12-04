@@ -24,7 +24,7 @@ tags: [linux, bash]
 * gawk 脚本命令必须放到两个大括号内，且放到单引号中;
 * gawk 会默认用空格符给输入字符串划分;  
 
-		$ gawk '{print $1}' txt  #将txt中每行数据的第一个划分打印出来       
+		$ gawk '{print $1}' txt  #将txt中每行数据的第一个划分打印出来　　
 		$ gawk -F: '{print $1}' /etc/passwd  #换用其他的换行符，可以加-F选项
 
 
