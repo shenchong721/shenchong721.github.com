@@ -21,10 +21,10 @@ tags: [linux, bash]
 	$ sed -e `s/a/b/ ; s/c/d/` txt #执行多个命令时加上参数-e;且命令之间用分号隔开
 
 <h2 id='2'>2.gawk</h2>
-   * gawk 脚本命令必须放到两个大括号内，且放到单引号中;
-   * gawk 会默认用空格符给输入字符串划分;  
+* gawk 脚本命令必须放到两个大括号内，且放到单引号中;
+* gawk 会默认用空格符给输入字符串划分;  
 
-		$ gawk '{print $1}' txt  #将txt中每行数据的第一个划分打印出来   
+		$ gawk '{print $1}' txt  #将txt中每行数据的第一个划分打印出来       
 		$ gawk -F: '{print $1}' /etc/passwd  #换用其他的换行符，可以加-F选项
 
 
