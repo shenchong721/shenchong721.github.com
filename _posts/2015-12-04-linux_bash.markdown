@@ -16,7 +16,6 @@ tags: [linux, bash]
 <h1 id="1">1.sed</h1>
 
 * 模式s/pattern/replacement/flags:
-
     + 数字: 表示新文本将替换第几处模式匹配的地方
     + g: 表明新文本将会替换所有已有文本出现的地方
     + p: 表明原来行的结果要打印出来
