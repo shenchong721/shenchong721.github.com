@@ -25,11 +25,14 @@ sed对文本处理的方式很多，增加，删除，替换，修改，打印..
 
 具体代码如下：
 	
+	# 查找替换
 	$echo "this is a  test" | sed 's/test/mytest/'  #该命令将‘test’换成‘mytest’;
 	$echo "this is second test of sed test" | sed 's/test/mytest/2'  #参数2表示是替换第二个test，默认是替换第一个;
 	$sed -e 's/a/b/ ; s/c/d/' txt #执行多个命令时加上参数-e;且命令之间用分号隔开
+	#删除
 	$sed '2,3s/a/b/' data  #将data中的第二行第三行替换;２到n行（２,n）;２到文件结束(2,$)
 	$sed '3d' data #将data中的第三行给删除;删除３到n行(3,nd)
+	#打印输出
 	$sed -n ’/finded txt/p‘ data  #将data中含有'finded txt'格式那一行显示出来，-n表示不打印原本的文件
 	$sed -n '2,3p' data  #将data中的2到3行打印出来
 
