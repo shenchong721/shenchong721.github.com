@@ -24,7 +24,7 @@ linux下经常遇到的编码问题。如果你需要在Linux中操作windows下
 
 + 方法一：file filename
 + 方法二：在vim中可以直接查看文件编码：     
-	:set fileencoding
+　　:set fileencoding
 
 
 
@@ -32,8 +32,8 @@ linux下经常遇到的编码问题。如果你需要在Linux中操作windows下
 + 方法一：直接在vim中转换文件编码：  
 在Vim中直接进行转换文件编码，比如将一个文件转换成utf-8格式  
  	:set fileencoding=utf-8
-+ 方法二：在vim中设置文件集合：
- 即要对哪些文件进行操作，可以使用通配符，比如我通常是对 C/C++ 源程序进行编码转换  　　　
++ 方法二：在vim中设置文件集合：  
+ 即要对哪些文件进行操作，可以使用通配符，比如我通常是对 C/C++ 源程序进行编码转换    　　　
 　　:args *.h *.cpp
 给出要在每个文件上执行的命令，这里是转换编码：
 　　:argdo set fenc=utf-8 | update
