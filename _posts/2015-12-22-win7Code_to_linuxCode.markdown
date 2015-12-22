@@ -23,7 +23,7 @@ linux下经常遇到的编码问题。如果你需要在Linux中操作windows下
 <h1 id="1">1.查看文件编码</h1>
 
 + 方法一：file filename
-+ 方法二：在vim中可以直接查看文件编码：
++ 方法二：在vim中可以直接查看文件编码：     
 　　:set fileencoding
 
 
